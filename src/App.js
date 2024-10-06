@@ -1,16 +1,13 @@
 
-import Colours from "./components/Colours";
 import './App.css';
-
+import MyComponent from './components/MyComponent';
 
 
 function App() {
   return (
     <>
-      <Colours />
-
+      <MyComponent />
     </>
   )
-
 }
 export default App;
