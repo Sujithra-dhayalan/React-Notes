@@ -1,3 +1,4 @@
+// about update function: it also considers the previous value
 import { useState } from "react";
 
 function Counter() {
@@ -5,7 +6,10 @@ function Counter() {
     const [count, setCount] = useState(0)
 
     const increment = () => {
-        setCount(count + 1)
+        // normal form : setCount(count + 1)
+        setCount(prevCount => prevCount + 1)
+        setCount(prevCount => prevCount + 1)
+        setCount(prevCount => prevCount + 1) //basically when we use the normal form it will increase it only by one, no matter how many times we repeat the same line. Incase of the update function, it repeats the action each time we repeat the line
     }
 
     const decrement = () => {
