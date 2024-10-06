@@ -1,12 +1,13 @@
 
 import './App.css';
-import Todo from './components/TodoList';
+import Clock from './components/Clock';
+
 
 
 function App() {
   return (
     <>
-      <Todo />
+      <Clock />
     </>
   )
 }
