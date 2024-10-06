@@ -1,6 +1,6 @@
 
 import './App.css';
-import Reference from './components/Reference';
+import StopWatch from './components/StopWatch';
 
 
 
@@ -8,7 +8,7 @@ import Reference from './components/Reference';
 function App() {
   return (
     <>
-      <Reference />
+      <StopWatch />
 
     </>
   )
