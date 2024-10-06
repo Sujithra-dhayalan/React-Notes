@@ -1,3 +1,6 @@
+{/*4. Introducing useState
+    useState: allows the creation of a stateful variable and a setter function to update its value in the virtual DOM*/}
+
 import { useState } from "react"
 
 function HooksOne() {

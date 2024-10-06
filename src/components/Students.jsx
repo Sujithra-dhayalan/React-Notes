@@ -9,6 +9,9 @@
       <Student name={"Nayanthara"} /> */}
 
 
+{/*1. This is the starting of the notes!
+    it has the basics of props!
+    Props: inputs passed to a component, Immutable, Read only properties that are shared between the components*/}
 
 function Student(props) {
     return (
@@ -21,17 +24,20 @@ function Student(props) {
 
 }
 
-// Student.prototype = {
+{/*PropTypes: a mechanism that ensures that the passed values is of correct type*/ }
+Student.prototype = {
 
-//     name: PropTypes.string,
-//     age: PropTypes.number,
-//     isStudent: PropTypes.bool
-// }
+    name: PropTypes.string,
+    age: PropTypes.number,
+    isStudent: PropTypes.bool
+}
 
-// Student.defaultProps = {
-//     name: "Guest",
-//     age: 0,
-//     isStudent: false
-// }
+{/*sets the default value for the props, when a user forgets to set the value, it takes the default value instead of displaying the null*/ }
+
+Student.defaultProps = {
+    name: "Guest",
+    age: 0,
+    isStudent: false
+}
 
 export default Student;

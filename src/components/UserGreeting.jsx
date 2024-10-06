@@ -1,4 +1,6 @@
-// this file tells about the conditional rendering
+{/*2. this file tells about the conditional rendering*/ }
+
+//  use this in app.js file
 // <UserGreeting isLoggedIn={true} username={"Sujithra"} />
 
 function UserGreeting(props) {

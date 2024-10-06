@@ -1,3 +1,5 @@
+
+
 import { useState } from "react";
 
 function ListGroup() {
@@ -13,7 +15,7 @@ function ListGroup() {
 
     const [item, setItem] = useState('')
 
-    function clicking(id) {
+    function clicking(id) {//index is passed as id in this function
         setItem(id)
     }
 
@@ -22,7 +24,10 @@ function ListGroup() {
         <div>
             <h1>List Group</h1>
             <ul className="list-group">
-                {items.map(item => <li key={item} className="list-group-item" onClick={() => clicking(item)}>{item}</li>)}
+                {items.map((item, index) =>
+                    <li key={index} className="list-group-item" onClick={() => clicking(item)}>
+                        {item}
+                    </li>)}
             </ul>
             <p>You clicked {item}</p>
         </div>
