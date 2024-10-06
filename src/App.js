@@ -1,13 +1,20 @@
 
 import './App.css';
-import Clock from './components/Clock';
+import ComponentA from './components/ComponentA';
+import ComponentB from './components/ComponentB';
+import ComponentC from './components/ComponentC';
+import ComponentD from './components/ComponentD';
 
 
 
 function App() {
   return (
     <>
-      <Clock />
+      <ComponentA />
+      {/* <ComponentB />
+      <ComponentC />
+      <ComponentD /> */}
+
     </>
   )
 }
